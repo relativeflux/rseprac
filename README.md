@@ -4,7 +4,7 @@
 
 The sections below provide explanations for each of the proposed solutions. Please see the added `solutions` folder for the relevant material.
 
-**N.B**: Six problems were mentioned in the preparation guide, but the original repo only seems to contain five problems.
+**N.B**: Six problems were mentioned in the preparation guide, but the original repo only seems to contain five problems... Perhaps this is an 'off by one' error.
 
 ## Problem 1
 
@@ -34,3 +34,4 @@ See the contents of the `solutions/problem_4` folder.
 
 See the contents of the `solutions/problem_5` folder.
 
+The original `rseprac/problem_5/omni.py` source file has an issue at line 2, where it uses the unicode U+201C character instead of standard ASCII double quotes. This is not recognised by the Python 3 interpreter. Therefore the version given in the preparation guide is taken as the 'source of truth' for this problem.
