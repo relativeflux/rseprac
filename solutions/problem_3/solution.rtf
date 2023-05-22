@@ -1,0 +1,100 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\fnil\fprq0\fcharset2 OpenSymbol{\*\falt Arial Unicode MS};}{\f6\fswiss\fprq2\fcharset0 FreeSans;}{\f7\fmodern\fprq1\fcharset0 Liberation Mono{\*\falt Courier New};}{\f8\fmodern\fprq1\fcharset128 FreeMono;}{\f9\fmodern\fprq1\fcharset0 Noto Sans Mono CJK SC;}{\f10\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f11\fnil\fprq2\fcharset0 Lohit Devanagari;}{\f12\fnil\fprq0\fcharset128 Lohit Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052 Normal;}
+{\*\cs15\snext15\rtlch\af5 \ltrch\hich\af5\loch\f5\dbch\af5 Bullets;}
+{\s16\sbasedon0\snext17\rtlch\af11\afs28 \ltrch\hich\af4\loch\sb240\sa120\keepn\f4\fs28\dbch\af10 Heading;}
+{\s17\sbasedon0\snext17\loch\sl276\slmult1\sb0\sa140 Text Body;}
+{\s18\sbasedon17\snext18\rtlch\af12 \ltrch\loch\sl276\slmult1\sb0\sa140 List;}
+{\s19\sbasedon0\snext19\rtlch\af12\afs24\ai \ltrch\loch\sb120\sa120\noline\fs24\i Caption;}
+{\s20\sbasedon0\snext20\rtlch\af12\alang255 \ltrch\lang255\langfe255\loch\noline\lang255\dbch\langfe255 Index;}
+{\s21\sbasedon0\snext21\rtlch\af7\afs20 \ltrch\hich\af7\loch\sb0\sa0\f7\fs20\dbch\af9 Preformatted Text;}
+}{\*\generator LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2}{\info{\creatim\yr2023\mo5\dy21\hr21\min2}{\revtim\yr2023\mo5\dy21\hr23\min6}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab709
+\hyphauto1\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Page Style;}}
+\formshade\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\pgndec\sftnnar\saftnnrlc\sectunlocked1\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+Problem 3 \u8211\'96 Slow Python Code}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\hich\af6\loch\f6\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+There are a number of general principles that come into play when dealing with slow code. Since this is a performance problem we will be wishing to optimise the code. But before undertaking this task it is important to ensure that the code is correct, and providing the expected results \u8211\'96 there is little to be gained from optimising incorrect or buggy code.}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\hich\af6\loch\f6\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+The provided Python script is does in fact contain defective code, and furthermore does not provide }{\hich\af6\loch\f6\loch
+any output}{\hich\af6\loch\f6\loch
+. }{\hich\af6\loch\f6\loch
+A corrected version is supplied. }{\hich\af6\loch\f6\loch
+For example on line 7 we have a range object created, which in Python 3 is immutable, yet the body of the subsequent }{\hich\af8\loch\f8\loch
+while}{\hich\af6\loch\f6\loch
+ loop, at line}{\hich\af6\loch\f6\loch
+s 16 and 18, attempts to assign to it, which is illegal.}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\hich\af6\loch\f6\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+Using a linter can help identify bugs at an early stage, prior to formal testing. }{\hich\af6\loch\f6\loch
+A Linter is a tool which automatically checks code for bugs, syntax errors and }{\hich\af6\loch\f6\loch
+issues relating to }{\hich\af6\loch\f6\loch
+style. Linters are particularly relevant to interpreted languages, such as Python. Typically a Linter should be used early in the lifecycle of the code, prior to any formal tests. }{\hich\af6\loch\f6\loch
+One of the most widely used linting tools for Python is Pylint, which can be installed using pip. }{\hich\af6\loch\f6\loch
+It is designed to be used from the command line, for example }{\hich\af8\loch\f8\loch
+pylint pyscript.py}{\hich\af6\loch\f6\loch
+. Output is normally to standard output, but this can be redirected to a file using the }{\hich\af8\loch\f8\loch
+\u8211\'96output}{\hich\af6\loch\f6\loch
+ option.}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\hich\af6\loch\f6\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+Questions of performance relate in general to the use of system resources. The first step in optimisation is therefore a case of finding out how the code is utilising the CPU and/}{\hich\af6\loch\f6\loch
+or}{\hich\af6\loch\f6\loch
+ memory/storage resources provided to it by the system. }{\hich\af6\loch\f6\loch
+This will allow us to make more informed decisions on how to modify the code, if necessary.}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\hich\af6\loch\f6\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+Since P}{\hich\af6\loch\f6\loch
+ython is an interpreted, dynamically-typed language, compiling source code to bytecode. }{\hich\af6\loch\f6\loch
+This naturally makes Python a slower language than, for example, C or C++. Python can }{\hich\af6\loch\f6\loch
+however }{\hich\af6\loch\f6\loch
+be extended with pre-compiled modules written in C, which can dramatically speed up Python code.}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+After taking these principles into consideration, if code still appears to be running slowly then we can p}{\hich\af6\loch\f6\loch
+rofile }{\hich\af6\loch\f6\loch
+it}{\hich\af6\loch\f6\loch
+. }{\hich\af6\loch\f6\loch
+Most programming languag}{\hich\af6\loch\f6\loch
+es come equipped with a}{\hich\af6\loch\f6\loch
+ profiler }{\hich\af6\loch\f6\loch
+that can be used at the command line}{\hich\af6\loch\f6\loch
+, }{\hich\af6\loch\f6\loch
+and Python is no different}{\hich\af6\loch\f6\loch
+. }{\hich\af6\loch\f6\loch
+Two profiling modules are available through Python 3, }{\hich\af8\loch\f8\loch
+profile}{\hich\af6\loch\f6\loch
+ and }{\hich\af8\loch\f8\loch
+cProfile}{\hich\af6\loch\f6\loch
+, }{\hich\af6\loch\f6\loch
+which share the same interface, }{\hich\af6\loch\f6\loch
+and can be }{\hich\af8\loch\f8\loch
+import}{\hich\af6\loch\f6\loch
+ed just like any other Python modile}{\hich\af6\loch\f6\loch
+. }{\hich\af6\loch\f6\loch
+The latter is written in C, and so is itself potentially more performant.}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af13\langfe2052\ql\ltrpar{\hich\af6\loch\f6\loch
+T}{\hich\af6\loch\f6\loch
+he following is a basic example of how to use the profile module. The code for cProfile would be equivalent). We are assuming a function exists called main, which takes no arguments. Example output is also shown, }{\hich\af6\loch\f6\loch
+and consists of a table of function calls and execution times}{\hich\af6\loch\f6\loch
+.}
+\par \pard\plain \s21\rtlch\af7\afs20 \ltrch\hich\af7\loch\sb0\sa0\f7\fs20\dbch\af9\ql\ltrpar\loch
+
+\par \pard\plain \s21\rtlch\af7\afs20 \ltrch\hich\af7\loch\sb0\sa0\f7\fs20\dbch\af9\ql\ltrpar{\rtlch\afs24 \ltrch\hich\af8\loch\fs24\f8\loch
+import profile}
+\par \pard\plain \s21\rtlch\af7\afs20 \ltrch\hich\af7\loch\sb0\sa0\f7\fs20\dbch\af9\ql\sb0\sa283\ltrpar{\rtlch\afs24 \ltrch\hich\af8\loch\fs24\f8\loch
+{\*\bkmkstart line-2-35}{\*\bkmkend line-2-35}profile.run('main()')}
+\par }
